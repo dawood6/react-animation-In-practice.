@@ -1,0 +1,296 @@
+*{
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  $textColor: #444444;
+  $gray: #bbb;
+  $bg: whitesmoke;
+  $pgb: #42c8cb;
+  $pgt: #6bffc8;
+  $dot: #349a98;
+  $bgb: #ff4164;
+  $bgt: #ff886b;
+  $bdot1: #59e8c8;
+  $bdot2: #ffee71;
+  $bdot3: #6654af;
+  $bdot4: #343434;
+  $bdot5: #dfdfdf;
+  $star: #fe6067;
+  $discount: #fe6168;
+  
+  @mixin bp($bp,
+    $min-max: min-width){
+      $em: $bp/16;
+      @media(#{$min-max}: #{$em}em){
+        @content;
+      }
+  }
+  
+  .main-con{
+    background-color: $bg;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    color: $textColor;
+  }
+  
+  .mainCon{
+    margin: 30px;
+    width: 100%;
+    max-width: 900px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h5{
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 14px;
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+    color: $gray;
+  }
+  
+  .product{
+    &-image{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(to bottom, $pgt 0%, $pgb 100%);
+      border-radius: 20px 20px 0 0;
+      padding: 55px 0;
+      width: 100%;
+      margin: auto;
+    }
+    &-pic{
+      max-width: 180px;
+      position: relative;
+      left: 0;
+      margin: 40px 0;
+      filter: drop-shadow(-6px 40px 23px rgba(black, 0.5));
+    }
+    &-details{
+      padding: 40px;
+      background-color: white;
+      border-radius: 0 0 20px 20px;
+      .title{
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .colorCat{
+        text-transform: uppercase;
+        font-style: italic;
+        color: $gray;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .price{
+        font-weight: 700;
+        margin-top: 5px;
+        font-size: 18px;
+        .current{
+          color: $discount;
+          margin-left: 6px;
+        }
+      }
+      .before{
+        text-decoration: line-through;
+      }
+      header{
+        margin-bottom: 50px;
+        position: relative;
+      }
+      article{
+        >h5{
+          margin: 0;
+        }
+        >p{
+          color: $gray;
+          margin: .5em 0;
+          font-size: 14px;
+          line-height: 1.6;
+        }
+      }
+      .controls{
+        margin: 3em 0;
+        >div{
+          flex: 1;
+        }
+        .option{
+          margin-top: 12px;
+          display: inline-block;
+          position: relative;
+          &:hover{
+            color: $textColor;
+          }
+          &::before{
+            content: '';
+            position: absolute;
+            border-width: 2px 2px 0 0;
+            border-style: solid;
+            top: 0;
+            bottom: 0;
+            height: 5px;
+            width: 5px;
+            right: -18px;
+            margin: auto;
+            transform: rotate(135deg);
+          }
+        }
+        >div+div{
+          margin-top: 20px;
+          flex: none;
+        }
+        ul{
+          display: flex;
+          margin: 15px 5px;
+        }
+      }
+      .color li+li{
+        margin-left: 15px;
+      }
+      .colors{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: block;
+      }
+      $colors-list: $bdot1 $bdot2 $bdot3 $bdot4 $bdot5;
+      @each $current-color in $colors-list{
+        $i: index($colors-list, $current-color);
+        .color-bdot#{$i}{
+          background-color: $current-color;
+          &:hover,
+          &.activeDots{
+            box-shadow: 0 0 0 3px white, 0 0 0 5px $current-color;
+          }
+        }
+      }
+      .rate{
+        position: static;
+        margin-top: 10px;
+        a{
+          font-size: 18px;
+          color: $gray;
+          &.activeDots,
+          &:hover{
+            color: $star;
+          }
+        }
+      }
+    }
+  }
+  
+  .dots{
+    display: flex;
+    margin-top: 40px;
+    >a{
+      background-color: $dot;
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+      border-radius: 50%;
+      &:hover,
+      &.activeDots{
+        background-color: white;
+      }
+    }
+    i{
+      display: none;
+    }
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >button{
+      display: flex;
+      border: 0;
+      padding: 15px 25px;
+      align-items: center;
+      border-radius: 7px;
+      cursor: pointer;
+      background: linear-gradient(to bottom, $bgt 0%, $bgb 100%);
+      box-shadow: 0 10px 30px 0 rgba($bgt, 0.7);
+      transition: 200ms;
+      &:hover{
+        background: linear-gradient(to bottom, $bgb 0%, $bgt 100%);
+      }
+      >img{
+        width: 31px;
+      }
+      >span{
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-left: 10px;
+        color: white;
+      }
+    }
+    >a{
+      img{
+        width: 24px;
+        opacity: .8;
+      }
+      &:hover{
+        img{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  @include bp(600){
+    .product-details{
+      .rate{
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        margin-top: 0;
+      }
+      .controls > div{
+        &.qty{
+          width: 60px;
+        }
+      }
+      .controls > div + div{
+        border-left: 2px solid rgba($gray, .5);
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100px;
+        margin-top: 0;
+      }
+      .controls{
+        display: flex;
+      }
+    }
+  }
+  
+  @include bp(900){
+    .mainCon{
+      display: flex;
+      flex-direction: row;
+      align-items: normal;
+      margin: auto;
+    }
+    .product-image{
+      border-radius: 20px 0 0 20px;
+      max-width: 330px;
+    }
+    .product-pic{
+      left: -40px;
+      max-width: 330px;
+    }
+    .product-details{
+      width: 100%;
+      border-radius: 0 20px 20px 0;
+    }
+  }

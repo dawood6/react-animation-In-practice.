@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.h1 {
+    font-size: 100px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.p {
+    font-size: 40px;
+    font-family: orbitron;
+}

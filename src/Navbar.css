@@ -1,0 +1,17 @@
+.nav-bar {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}

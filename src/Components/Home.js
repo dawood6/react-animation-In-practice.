@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div>
+        <div className='mainHome'>
             <main>
                 <section className="intro">
                     <div className="intro-img"> <img src={mainImg} alt="illustration-intro" /></div>
@@ -100,11 +100,13 @@ const Home = () => {
                 <section className="cta">
                     <div className="cta-item">
                         <div className="cta-text">
-                            <h2>Get early access today </h2>
-                            <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+                            <h2>Want To Know About Our Latest Prouducts</h2>
+                            <p>Give Your Email And Subscribe To Our NewsLetter For First</p>
                         </div>
                         <form className="cta-form mt-2" action>
-                            <input className="input-block" type="text" placeholder="example@email.com" /> <button className="btn-block">Get Started For Free</button> </form>
+                            <input className="input-block" type="text" placeholder="example@email.com" />
+                            <button className="btn-block">Submit</button>
+                        </form>
                     </div>
                 </section>
             </main>

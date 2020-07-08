@@ -16,8 +16,8 @@
     --padding-footer-mobile: 25rem 3rem 1rem;
 }
 
-body {
-    background-color: var(--primary-color-dark-blue-2);
+.mainHome {
+    background-color: black;
     color: var(--neutral-color-white);
     font-family: var(--font-body);
 }
@@ -75,7 +75,7 @@ header {
 }
 
 a:hover {
-    color: var(--accent-color-cyan);
+    color: black;
     transition: 600ms;
 }
 
@@ -256,8 +256,8 @@ button:hover {
 .contact-info {
     margin-top: 50px;
     padding: var(--padding-footer);
+    background: linear-gradient(to bottom, #6bffc8 0%, #42c8cb 100%);
     display: grid;
-    background-color: var(--primary-color-dark-blue-3);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "logo logo logo logo" "location contacts links social" "attribution attribution attribution attribution";

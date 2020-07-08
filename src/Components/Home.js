@@ -2,10 +2,7 @@ import React from 'react';
 import './Home.css'
 import shoes from './shoe';
 import mainImg from '../main-img.png'
-import feature1 from '../feature-img-1.png'
-import feature2 from '../feature-img-2.png'
-import feature3 from '../feature-img-3.png'
-import feature4 from '../feature-img-4.png'
+
 const Home = () => {
     return (
         <div>
@@ -24,31 +21,31 @@ const Home = () => {
                 </section>
                 <section className="features">
                     <div className="features-item">
-                        <div className="features-item-head"> <img src={feature1} alt="" /> </div>
+                        <div className="features-item-head"> <img src='https://i.ibb.co/hKbcnXX/air-jordan-14-retro.png' alt="" /> </div>
                         <div className="features-item-body  mt-2">
-                            <h3>Access your files, anywhere</h3>
-                            <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+                            <h3>Air Jordan 14 Retro</h3>
+                            <p>The Air Jordan !4 Retro stands out with its intricately detailed, laser-etched upper. Its webbed lacing system and foam-backed collar stabilize a performance fit.</p>
                         </div>
                     </div>
                     <div className="features-item">
-                        <div className="features-item-head"> <img src={feature3} alt="" /> </div>
+                        <div className="features-item-head"> <img src='https://i.ibb.co/TcY35bf/air-jordan-1-low-shoe.png' alt="" /> </div>
                         <div className="features-item-body mt-2">
-                            <h3> Security you can trust</h3>
-                            <p> 2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+                            <h3> Air Jordan 1 low</h3>
+                            <p>The Air Jordan 1 low continues the legacy of a cultural icon. Light, responsive and sculpted with aerodynamic precision,   combines boldly unconventional midsole.</p>
                         </div>
                     </div>
                     <div className="features-item">
-                        <div className="features-item-head"> <img src={feature3} alt="" /> </div>
+                        <div className="features-item-head"> <img src='https://i.ibb.co/WV7pM3W/jordan-delta.png' alt="" /> </div>
                         <div className="features-item-body  mt-2">
-                            <h3> Real-time collaboration</h3>
-                            <p> Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+                            <h3> Jordan Delta </h3>
+                            <p>One of the game's fiercest competitors, triple-double dynamo Russell Westbrook has the motor, muscle and mentality to match his  fearlessness   with the stats to.</p>
                         </div>
                     </div>
                     <div className="features-item">
-                        <div className="features-item-head"> <img src={feature4} alt="" /> </div>
+                        <div className="features-item-head"> <img src='https://i.ibb.co/6yfZfgP/air-jordan-xxxiv.png' alt="" /> </div>
                         <div className="features-item-body  mt-2">
                             <h3> Store any type of file</h3>
-                            <p> Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+                            <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
                         </div>
                     </div>
                 </section>

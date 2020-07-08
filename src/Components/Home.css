@@ -166,10 +166,6 @@ button:hover {
     text-align: center;
 }
 
-.features-item-head img {
-    width: 200px;
-}
-
 .productive {
     display: flex;
     align-items: center;

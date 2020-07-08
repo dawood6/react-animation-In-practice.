@@ -7,7 +7,7 @@ import Prouduct from './Components/Prouduct';
 import Home from './Components/Home';
 import Contact from './Components/contact';
 import Info from './Components/Info';
-import Navbar from './Navbar';
+import Navbar from './Components/Navbar';
 
 const App = () => {
     return (

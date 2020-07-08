@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 const LaunchIndex = () => {
 
     return (
+
         <div className='grid-container'>
             {Object.entries(shoes).map(([slug, { name, img, price }]) => (
                 <Link to={`/prouduct/${slug}`}>

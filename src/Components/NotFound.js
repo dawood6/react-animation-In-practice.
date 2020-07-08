@@ -5,7 +5,7 @@ const NotFound = () => {
     return (
         <div className='not-found'>
             <h1 className='h1'>Not Found</h1>
-            <p className='p'>Sorry your page was not found</p>
+            <p className='p'>Sorry your page was not found.</p>
             <button className='not-found-btn'>
                 <Link to='/prouduct'> <span>Go Checkut Our Cool Prouducts</span></Link>
             </button>

@@ -9,7 +9,7 @@ const shoes = {
         name: "Air Jordan XXXIV Low",
         img: "https://i.ibb.co/6yfZfgP/air-jordan-xxxiv.png",
         price: 175,
-        rate: ['★', '★', '★']
+        rate: ['★', '★']
     },
     "Air Jordan 1 Low SE Shoe": {
         name: "Air Jordan 1 Low SE",

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css'
 import mainImg from '../main-img.png'
+import logoImg from '../nike-logo.png'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -49,12 +51,11 @@ const Home = () => {
                     </div>
                 </section>
                 <section className="productive">
-                    <div className="productive-img"> <img src="https://hannahshiels.github.io/Fylo-dark-theme-landing-page/images/illustration-stay-productive.png" alt="" /> </div>
+                    <div className="productive-img"> <img src={logoImg} alt="" /> </div>
                     <div className="productive-content">
-                        <h2>Stay productive, wherever you are</h2>
-                        <p className="lg-p"> Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. </p>
-                        <p className="lg-p"> Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
-        </p>
+                        <h2>DESGN TO HELP REDUCE INJURY</h2>
+                        <p className="lg-p">Up to 40% Off <br /> <Link to='/prouduct'>Shop Our Latest Sale Styles</Link> </p>
+                        <p className="lg-p">Want To Know More Information About Us </p>
                         <p className="lg-p"> <a className="content-link" href="#">See how Fylo works <i className="fas fa-arrow-alt-circle-right" /></a> </p>
                     </div>
                 </section>
@@ -109,10 +110,9 @@ const Home = () => {
             </main>
             <footer>
                 <section className="contact-info">
-                    <div className="contact-info-logo"> <img src="https://hannahshiels.github.io/Fylo-dark-theme-landing-page/images/logo.svg" alt="" /> </div>
                     <div className="contact-info-location">
                         <div className="contact-info-location-item">
-                            <img className="img-footer" src="https://hannahshiels.github.io/Fylo-dark-theme-landing-page/images/icon-location.svg" alt="" />
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         </div>
                     </div>
@@ -141,13 +141,13 @@ const Home = () => {
                     </nav>
                     <div className="contact-info-social-links">
                         <a className="icon-link" href="#">
-                            <div className="contact-info-social-link-item flex-center"> <i className="fab fa-facebook-f" /></div>
+                            <div className="contact-info-social-link-item flex-center"><i class="fa fa-facebook" aria-hidden="true"></i></div>
                         </a>
                         <a className="icon-link" href="#">
-                            <div className="contact-info-social-link-item flex-center"> <i className="fab fa-twitter" /></div>
+                            <div className="contact-info-social-link-item flex-center"><i class="fa fa-twitter" aria-hidden="true"></i></div>
                         </a>
                         <a className="icon-link" href="#">
-                            <div className="contact-info-social-link-item flex-center"> <i className="fab fa-instagram" /> </div>
+                            <div className="contact-info-social-link-item flex-center"><i class="fa fa-instagram" aria-hidden="true"></i></div>
                         </a>
                     </div>
                 </section></footer></div>

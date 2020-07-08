@@ -128,15 +128,14 @@ const Home = () => {
                     </div>
                     <nav className="contact-info-links">
                         <ul className="contact-info-links-list">
-                            <li> <a href="#">About Us</a> </li>
-                            <li> <a href="#">Jobs</a> </li>
-                            <li> <a href="#">Press</a> </li>
-                            <li> <a href="#">Blog</a> </li>
+                            <li><Link to='/'>Home</Link></li>
+                            <li><Link to='/prouduct'>Prouducts</Link></li>
+                            <li><Link to='/info'>Information</Link></li>
                         </ul>
                         <ul className="contact-info-links-list">
-                            <li> <a href="#">Contact Us</a> </li>
-                            <li> <a href="#">Terms</a> </li>
-                            <li> <a href="#">Privacy</a> </li>
+                            <li><Link to='/contact'>Contact</Link></li>
+                            <li>Terms</li>
+                            <li>Privacy</li>
                         </ul>
                     </nav>
                     <div className="contact-info-social-links">

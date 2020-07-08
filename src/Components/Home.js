@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css'
-import shoes from './shoe';
 import mainImg from '../main-img.png'
 
 const Home = () => {
@@ -44,8 +43,8 @@ const Home = () => {
                     <div className="features-item">
                         <div className="features-item-head"> <img src='https://i.ibb.co/6yfZfgP/air-jordan-xxxiv.png' alt="" /> </div>
                         <div className="features-item-body  mt-2">
-                            <h3> Store any type of file</h3>
-                            <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+                            <h3>Air Jordan xxxiv</h3>
+                            <p>Pay homage to MJ's legendary career in the Air Jordan xxxiv. The design pulls  in  elements  from  a  range of iconic Jordan's , like the patent leather mudguard.</p>
                         </div>
                     </div>
                 </section>

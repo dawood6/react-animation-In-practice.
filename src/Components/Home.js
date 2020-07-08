@@ -56,7 +56,7 @@ const Home = () => {
                         <h2>DESGN TO HELP REDUCE INJURY</h2>
                         <p className="lg-p">Up to 40% Off <br /> <Link to='/prouduct'>Shop Our Latest Sale Styles</Link> </p>
                         <p className="lg-p">Want To Know More Information About Us </p>
-                        <p className="lg-p"> <a className="content-link" href="#">See how Fylo works <i className="fas fa-arrow-alt-circle-right" /></a> </p>
+                        <p className="lg-p"><Link to='/info' className="content-link">INFORMATION <i class="fa fa-arrow-right" aria-hidden="true"></i></Link></p>
                     </div>
                 </section>
                 <section className="testimonial">
@@ -134,8 +134,8 @@ const Home = () => {
                         </ul>
                         <ul className="contact-info-links-list">
                             <li><Link to='/contact'>Contact</Link></li>
-                            <li>Terms</li>
-                            <li>Privacy</li>
+                            <li><Link to='/'>Terms</Link></li>
+                            <li><Link to='/'>Privacy</Link></li>
                         </ul>
                     </nav>
                     <div className="contact-info-social-links">

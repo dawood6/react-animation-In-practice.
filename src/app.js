@@ -9,12 +9,11 @@ import Contact from './Components/contact';
 import Info from './Components/Info';
 import Navbar from './Navbar';
 
-
 const App = () => {
     return (
         <Router>
             <Navbar />
-            <br /><br /><br /><br />
+            <br /><br />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/prouduct' element={<Prouduct />} >

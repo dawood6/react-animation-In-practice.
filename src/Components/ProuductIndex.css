@@ -1,6 +1,6 @@
 :root {
   --size: 400px;
-  --lb: rgba(0, 0, 0, 0.5);
+  --lb: white;
 }
 
 a {
@@ -12,14 +12,16 @@ a {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  color: cornsilk;
+  color: white;
   font-family: "Roboto Condensed", sans-serif;
+  background-color: black;
 }
 
-.container {
+.container-shoe {
   width: var(--size);
   height: var(--size);
   display: grid;
+  overflow: hidden;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, 50%);
   justify-items: center;
@@ -38,7 +40,7 @@ a {
 }
 
 .shoeImg {
-  background-color: #f6f6f6;
+  background: linear-gradient(to bottom, #6bffc8 0%, #42c8cb 100%);
 }
 
 .card-img {
@@ -61,14 +63,8 @@ h4, ul, span {
   transition: all 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
-.size ul li, .color ul li {
-  list-style: none;
-  width: 20px;
-  height: 20px;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+.shoeSize ul {
+  margin-left: 15px;
 }
 
 .color {
@@ -77,22 +73,28 @@ h4, ul, span {
 }
 
 .color ul li span {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50px;
   display: inline-block;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 
-.red {
-  background-color: red;
+.color1 {
+  background-color: #dfdfdf;
 }
 
-.yellow {
-  background-color: greenyellow;
+.color2 {
+  background-color: #ffee71;
 }
 
-.blue {
-  background-color: #0070ee;
+.color3 {
+  background-color: #6654af;
+}
+
+.color4 {
+  background-color: #343434;
 }
 
 .price {
@@ -106,23 +108,26 @@ h4, ul, span {
 
 .price h4 {
   margin-bottom: 8px;
+  margin-left: 23px;
 }
 
 .price span {
   width: 20px;
   height: 20px;
   padding: 5px;
-  margin-left: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 25px;
+  background-color: white;
+  color: black;
 }
 
 .productName {
-  color: black;
+  color: white;
   grid-column: 1;
   grid-row: 2;
   align-self: center;
   justify-self: center;
   z-index: 1;
+  margin-left: 20px;
   transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 

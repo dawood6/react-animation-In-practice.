@@ -4,12 +4,10 @@
   
   $textColor: #444444;
   $gray: #bbb;
-  $bg: whitesmoke;
+  $bg: black;
   $pgb: #42c8cb;
   $pgt: #6bffc8;
   $dot: #349a98;
-  $bgb: #ff4164;
-  $bgt: #ff886b;
   $bdot1: #59e8c8;
   $bdot2: #ffee71;
   $bdot3: #6654af;
@@ -25,22 +23,21 @@
         @content;
       }
   }
-  
+  body {
+    margin: 0;
+  }
   .main-con{
     background-color: $bg;
-    height: 70vh;
-    margin: auto;
+    height: 100vh;
     display: flex;
     color: $textColor;
+
   }
   
   .mainCon{
     margin: 30px;
     width: 100%;
     max-width: 900px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
   }
   
   h5{
@@ -68,6 +65,7 @@
       padding: 55px 0;
       width: 100%;
       margin: auto;
+      
     }
     &-pic{
       max-width: 180px;
@@ -75,6 +73,8 @@
       left: 0;
       margin: 40px 0;
       filter: drop-shadow(-6px 40px 23px rgba(black, 0.5));
+      -ms-transform: rotate(-30deg); /* IE 9 */
+  transform: rotate(-30deg);
     }
     &-details{
       padding: 40px;
@@ -91,17 +91,11 @@
         font-weight: 700;
         font-size: 14px;
       }
-      .price{
+      .shoe-price{
         font-weight: 700;
         margin-top: 5px;
         font-size: 18px;
-        .current{
-          color: $discount;
-          margin-left: 6px;
-        }
-      }
-      .before{
-        text-decoration: line-through;
+        color: black;
       }
       header{
         margin-bottom: 50px;
@@ -127,6 +121,7 @@
           margin-top: 12px;
           display: inline-block;
           position: relative;
+          color: black;
           &:hover{
             color: $textColor;
           }
@@ -141,7 +136,7 @@
             width: 5px;
             right: -18px;
             margin: auto;
-            transform: rotate(135deg);
+            transform: rotate(135deg); 
           }
         }
         >div+div{
@@ -153,7 +148,7 @@
           margin: 15px 5px;
         }
       }
-      .color li+li{
+      .shoe-color li+li{
         margin-left: 15px;
       }
       .colors{
@@ -161,8 +156,9 @@
         height: 20px;
         border-radius: 50%;
         display: block;
+        margin: 7px;
       }
-      $colors-list: $bdot1 $bdot2 $bdot3 $bdot4 $bdot5;
+      $colors-list:  $bdot2 $bdot3 $bdot4 $bdot5;
       @each $current-color in $colors-list{
         $i: index($colors-list, $current-color);
         .color-bdot#{$i}{
@@ -218,11 +214,11 @@
       align-items: center;
       border-radius: 7px;
       cursor: pointer;
-      background: linear-gradient(to bottom, $bgt 0%, $bgb 100%);
-      box-shadow: 0 10px 30px 0 rgba($bgt, 0.7);
+      background: linear-gradient(to bottom, $pgt 0%, $pgb 100%);
+      box-shadow: 0 10px 30px 0 rgba($pgt, 0.7);
       transition: 200ms;
       &:hover{
-        background: linear-gradient(to bottom, $bgb 0%, $bgt 100%);
+        background: linear-gradient(to bottom, $pgb 0%, $pgt 100%);
       }
       >img{
         width: 31px;

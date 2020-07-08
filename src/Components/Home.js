@@ -112,7 +112,7 @@ const Home = () => {
                 <section className="contact-info">
                     <div className="contact-info-location">
                         <div className="contact-info-location-item">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <img className="img-footer" src="https://hannahshiels.github.io/Fylo-dark-theme-landing-page/images/icon-location.svg" alt="" />
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const Home = () => {
                             <p>+1-543-123-4567</p>
                         </div>
                         <div className="contact-info-contacts-item ">
-                            <img className="img-footer" src="https://hannahshiels.github.io/Fylo-dark-theme-landing-page/images/icon-email.svg" alt="" />
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             <p>example@fylo.com</p>
                         </div>
                     </div>

@@ -17,6 +17,7 @@ const LaunchIndex = () => {
                                 <li>9</li>
                                 <li>8</li>
                                 <li>7</li>
+                                <li>6</li>
                             </ul>
                         </div>
                         <div class="price shoePrice">

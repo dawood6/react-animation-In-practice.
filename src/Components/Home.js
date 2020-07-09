@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css'
-import mainImg from './assets/main-img.png'
+// import mainImg from './assets/main-img.png'
 import logoImg from './assets/nike-logo.png'
 import card1 from './assets/card1.png'
 import card2 from './assets/card2.png'
@@ -15,7 +15,7 @@ const Home = () => {
             <main>
                 <section className="intro">
                     <AnimatedOnScroll animationIn="bounceInRight" >
-                        <div className="intro-img"> <img src={mainImg} alt="illustration-intro" /></div>
+                        <div className="intro-img"> <img src='https://i.ibb.co/0qdjVH4/main-img.png' alt="illustration-intro" /></div>
                     </AnimatedOnScroll>
                     <div className="intro-content">
                         <AnimatedOnScroll animationIn="bounceInLeft" >

@@ -53,11 +53,11 @@ const LaunchShoe = () => {
                         </div>
                         <div className="shoe-size">
                             <h5>size</h5>
-                            <a href="#!" className="option">(UK 8)</a>
+                            <p className="option">(UK 8)</p>
                         </div>
                         <div className="qty">
                             <h5>qty</h5>
-                            <a href="#!" className="option">(1)</a>
+                            <p className="option">(1)</p>
                         </div>
                     </div>
                     <div className="footer">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
@@ -14,7 +14,6 @@ const Navbar = () => {
                     <ul id="menu">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/prouduct'>Prouducts</Link></li>
-                        <li><Link to='/info'>Information</Link></li>
                         <li><Link to='/contact'>Contact</Link></li>
                     </ul>
                 </div>

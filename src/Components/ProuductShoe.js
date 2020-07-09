@@ -45,10 +45,10 @@ const LaunchShoe = () => {
                         <div className="Shoe-color">
                             <h5>color</h5>
                             <ul>
-                                <li><a href="#!" className="colors color-bdot1" /></li>
-                                <li><a href="#!" className="colors color-bdot2" /></li>
-                                <li><a href="#!" className="colors color-bdot3" /></li>
-                                <li><a href="#!" className="colors color-bdot4" /></li>
+                                <li><div href="#!" className="colors color-bdot1" /></li>
+                                <li><div href="#!" className="colors color-bdot2" /></li>
+                                <li><div href="#!" className="colors color-bdot3" /></li>
+                                <li><div href="#!" className="colors color-bdot4" /></li>
                             </ul>
                         </div>
                         <div className="shoe-size">

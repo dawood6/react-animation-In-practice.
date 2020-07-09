@@ -1,11 +1,4 @@
 :root {
-    --primary-color-dark-blue-1: hsl(217, 28%, 15%);
-    --primary-color-dark-blue-2: hsl(218, 28%, 13%);
-    --primary-color-dark-blue-3: hsl(216, 53%, 9%);
-    --primary-color-dark-blue-4: hsl(219, 30%, 18%);
-    --accent-color-cyan: hsl(176, 68%, 64%);
-    --accent-color-blue: hsl(198, 60%, 50%);
-    --neutral-color-white: hsl(0, 0%, 100%);
     --font-heading: 'Raleway', sans-serif;
     --font-body: 'Open Sans', sans-serif;
     --padding-sm: 2.5rem 2rem;
@@ -16,10 +9,12 @@
     --padding-footer-mobile: 25rem 3rem 1rem;
 }
 
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
 .mainHome {
     background-color: black;
-    color: var(--neutral-color-white);
+    color: white;
     font-family: var(--font-body);
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,23 +50,6 @@ a {
     color: var(--neutral-color-white);
     font-family: var(--font-heading);
     text-decoration: none;
-}
-
-header {
-    display: flex;
-    padding: var(--padding-md);
-    justify-content: space-between;
-}
-
-.nav-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-bar ul li {
-    display: inline-block;
-    margin-left: 1rem;
 }
 
 a:hover {
@@ -134,7 +112,7 @@ button {
     padding: 0 12px;
 }
 
-input {
+.input-block {
     height: 3rem;
     padding-left: 12px;
     border: none;
@@ -187,34 +165,21 @@ button:hover {
     border-bottom-color: var(--white);
 }
 
-.testimonial {
+.cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 
-.testimonial-item {
-    margin-left: 3.5rem;
-    flex-basis: 33.33%;
+.card-item {
     border-radius: 5px;
-    background-color: var(--primary-color-dark-blue-4);
-    box-shadow: 2px 2px 20px 2px var(--primary-color-dark-blue-3);
-    padding: var(--padding-sm);
+    box-shadow: 2px 2px 20px 2px black;
+    background: linear-gradient(90deg, #42c8cb, #6bffc8);
 }
 
-.testimonial-item:first-child {
-    margin-left: 0;
-}
-
-.testimonial-item-reviewer {
-    display: flex;
-    padding-top: 1rem;
-}
-
-.testimonial-item-reviewer img {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+.card-image {
+    width: 350px;
 }
 
 .cta {
@@ -231,8 +196,8 @@ button:hover {
     width: 66.66%;
     min-width: 300px;
     padding: var(--padding-md);
-    box-shadow: 2px 2px 30px 2px var(--primary-color-dark-blue-3);
-    background-color: var(--primary-color-dark-blue-4);
+    box-shadow: 2px 2px 30px 2px rgb(24, 21, 21);
+    background-color: #000;
     border-radius: 5px;
     text-align: center;
 }
@@ -245,6 +210,7 @@ button:hover {
 .input-block {
     width: 80%;
     max-width: 600px;
+    background-color: white;
 }
 
 .btn-block {
@@ -288,6 +254,7 @@ footer p {
     width: 18px;
     height: 18px;
     line-height: 1.5;
+    margin-top: 13px;
 }
 
 .contact-info-contacts {

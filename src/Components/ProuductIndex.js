@@ -10,7 +10,7 @@ const LaunchIndex = () => {
             {Object.entries(shoes).map(([slug, { name, img, price }]) => (
                 <Link to={`/prouduct/${slug}`}>
                     <div class="container-shoe shoe">
-                        <div class="productImage shoeImg"><img src={img} className='card-img' /></div>
+                        <div class="productImage shoeImg"><img src={img} className='card-img' alt='' /></div>
                         <div class="size shoeSize">
                             <h4>SIZE</h4>
                             <ul>

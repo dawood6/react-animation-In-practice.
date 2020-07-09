@@ -1,7 +1,7 @@
 import React from 'react';
 import shoes from './shoe';
 import { useParams } from 'react-router';
-import './ProuductShoe.scss'
+import './ProuductShoe.css'
 import NotFound from './NotFound';
 
 const LaunchShoe = () => {

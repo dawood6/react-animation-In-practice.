@@ -72,7 +72,7 @@ const Home = () => {
                     </AnimatedOnScroll>
                     <AnimatedOnScroll animationIn="bounceInRight" >
                         <div className="productive-content">
-                            <h2>DESGN TO HELP REDUCE INJURY</h2>
+                            <h2>DESIGN TO HELP REDUCE INJURY</h2>
                             <p className="lg-p">Up to 40% Off <br /> <Link to='/prouduct'>Shop Our Latest Sale Styles</Link> </p>
                             <p className="lg-p">Want To Know More Information About Us </p>
                             <p className="lg-p"><Link to='/info' className="content-link">INFORMATION <i class="fa fa-arrow-right" aria-hidden="true"></i></Link></p>

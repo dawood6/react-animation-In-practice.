@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.form-con {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93.2vh;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.wrapper {
+    margin: 100px auto 0;
+    width: 70%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+form {
+    width: 100%;
+    margin: 0;
+}
+
+form * {
+    font-size: 20px;
+    letter-spacing: 0.075em;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form .field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+form .field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #6bffc8, #42c8cb);
+    width: 100%;
+    height: 64px;
+    transition: width 333ms ease-in-out;
+    text-align: center;
+    padding: 18px 0;
+}
+
+form .field input[type="text"], form .field textarea {
+    border: none;
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    padding-left: 19.5%;
+    color: #313a3d;
+}
+
+form #msg {
+    height: 64px;
+    resize: none;
+    transition: all 333ms ease-in-out;
+    padding-top: 18px;
+}
+
+form textarea:focus#msg, form textarea:not(:placeholder-shown)#msg {
+    height: 166px;
+}
+
+form input[type="text"]:focus+label, form input[type="text"]:not(:placeholder-shown)+label, form textarea:focus+label, form textarea:not(:placeholder-shown)+label, form .field:hover label {
+    width: 18%;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(90deg, #6bffc8, #42c8cb);
+    -webkit-appearance: none;
+    border: none;
+    position: relative;
+    padding: 13px 50px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+form input[type="submit"]:hover, form input[type="submit"]:focus {
+    background: #42c8cb;
+}

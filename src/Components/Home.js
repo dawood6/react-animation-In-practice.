@@ -125,7 +125,7 @@ const Home = () => {
                     <div className="contact-info-contacts">
                         <div className="contact-info-contacts-item">
                             <img className="img-footer" src={iconPhone} alt="" />
-                            <p>+924578129901</p>
+                            <p>+xxxxxxxxxxx</p>
                         </div>
                         <div className="contact-info-contacts-item ">
                             <img class="img-footer" src={iconEmail} alt="" />

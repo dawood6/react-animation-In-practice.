@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "animate.css": "^4.1.0",
     "history": "^5.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-animated-css-onscroll": "^1.2.1",
